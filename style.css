@@ -1,5 +1,9 @@
-h1 {
-    color: orange;
+body {
+    font-family: sans-serif;
+}
+
+* {
+    margin: 0
 }
 
 #bg-img {
@@ -9,37 +13,140 @@ h1 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: grayscale(100%);
+    filter: saturate(0%) brightness(50%);
     z-index: -1;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#netfluxo {
+    position: fixed;
+    width: 250;
+    top: 15;
+    left: 15;
 }
 
 #caixa-login {
     display: flex;
     justify-content: center;
-    width: 300px;
-    height: 400px;
+    width: 320px;
+    height: 450px;
     background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
-h2,
-p,
-a,
-label {
+h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
     color: white;
 }
 
-#btn-entrar,
+input[type="text"],
+input[type="password"] {
+    width: 250px;
+    height: 40px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid rgb(148, 148, 148);
+    background-color: rgb(51, 51, 51);
+    color: rgb(148, 148, 148);
+}
+
+#btn-entrar {
+    width: 250px;
+    height: 33px;
+    padding: 6px;
+    font-size: 16px;
+    background-color: orange;
+    color: white;
+}
+
+#btn-codigo {
+    width: 250px;
+    height: 33px;
+    padding: 6px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: white
+}
+
+.caixa {
+    margin-bottom: 15px;
+}
+
+p,
+label,
+a {
+    color: white;
+}
+
+.link1 {
+    color: white;
+    text-decoration: none;
+}
+
+.link1:hover {
+    text-decoration: underline;
+}
+
 #btn-codigo,
 p,
-a {
+#esqueceu {
     display: flex;
     justify-content: center;
 }
 
-input {
+#novo-caixa {
+    position: relative;
+    right: 25px;
+}
+
+#novo {
+    color: rgb(148, 148, 148);
+}
+
+#footer {
+    position: relative;
     background-color: black;
+    color: white;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#duvidas {
+    position: absolute;
+    left: 60px;
+    top: 30px
+}
+
+#grade-links {
+    position: relative;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 60px;
+    padding: 60px;
+}
+
+.elemento {
+    margin-bottom: 20px;
+}
+
+#escolher-lingua {
+    position: absolute;
+    bottom: 50px;
+    left: 57px;
+}
+
+#lingua {
+    background-color: black;
+    color: white;
+    border-color: black;
+    font-size: 17;
 }
