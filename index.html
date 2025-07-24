@@ -1,61 +1,114 @@
 <html>
 
+<!DOCTYPE html>
+<html lang="pt-br">
+
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Netfluxo - Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div>
-        <img src="image.png" id="bg-img">
-
-        <h1>NETFLUXO</h1>
-
-        <div id="caixa-login">
-            <form>
-                <h2>Entrar</h2>
-
-                <div>
-                    <input type="text" placeholder="Email ou número de celular" required>
-                </div>
-
-                <br>
-
-                <div>
-                    <input type="password" placeholder="Senha" required>
-                </div>
-
-                <br>
-
-                <div id="btn-entrar">
-                    <button type="submit">Entrar</button>
-                </div>
-
-                <p>OU</p>
-
-                <div id="btn-codigo">
-                    <button type="button">Usar um código de acesso</button>
-                </div>
-
-                <br>
-
-                <div id="link">
-                    <a href="">Esqueceu a senha?</a>
-                </div>
-
-                <br>
-
-                <div id="lembrar">
-                    <label>
-                        <input type="checkbox"> Lembre-se de mim
-                    </label>
-                </div>
-
-                <div id="novo">
-                    <p>Novo por aqui? <a href="">Assine agora</a></p>
-                </div>
-            </form>
+        <div>
+            <img src="image.png" id="bg-img">
         </div>
+
+        <img src="netfluxo.png" id="netfluxo">
+
+        <main>
+            <div id="caixa-login">
+                <form>
+                    <h2>Entrar</h2>
+
+                    <div class="caixa">
+                        <input type="text" placeholder="Email ou número de celular" required>
+                    </div>
+
+
+                    <div class="caixa">
+                        <input type="password" placeholder="Senha" required>
+                    </div>
+
+
+                    <div class="caixa">
+                        <button type="submit" id="btn-entrar">Entrar</button>
+                    </div>
+
+                    <div class="caixa">
+                        <p id="ou">OU</p>
+                    </div>
+
+                    <div class="caixa">
+                        <button type="button" id="btn-codigo">Usar um código de acesso</button>
+                    </div>
+
+                    <div class="caixa" id="esqueceu">
+                        <a href="" class="link1">Esqueceu a senha?</a>
+                    </div>
+
+                    <div class="caixa" id="lembrar">
+                        <label>
+                            <input type="checkbox"> Lembre-se de mim
+                        </label>
+                    </div>
+
+                    <div id="novo-caixa">
+                        <p id="novo">Novo por aqui? <a href="" class="link1">Assine agora</a></p>
+                    </div>
+                </form>
+            </div>
+        </main>
+
+        <div id="footer">
+            <div id="duvidas">
+                <p>Dúvidas? Ligue 0000 000 0000</p>
+            </div>
+
+            <div id="grade-links">
+                <div class="coluna">
+                    <div class="elemento">
+                        <a href="">Perguntas frequentes</a>
+                    </div>
+                    <div class="elemento">
+                        <a href="">Preferências de cookies</a>
+                    </div>
+                </div>
+
+                <div class="coluna">
+                    <div class="elemento">
+                        <a href="">Central de ajuda</a>
+                    </div>
+                    <div class="elemento">
+                        <a href="">Informações cooperativas</a>
+                    </div>
+                </div>
+
+                <div class="coluna">
+                    <div class="elemento">
+                        <a href="">Termos de uso</a>
+                    </div>
+                </div>
+
+                <div class="coluna">
+                    <div class="elemento">
+                        <a href="">Privacidade</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="escolher-lingua">
+                <select id="lingua">
+                    <option selected>Português</option>
+                    <option>English</option>
+                    <option>Español</option>
+                    <option>Français</option>
+                </select>
+            </div>
+        </div>
+
     </div>
 </body>
 
